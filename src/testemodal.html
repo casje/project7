@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudio Alves Jr">
+	<meta name="description" content="Modelo para uma aplicação comercial">
+	<meta name="robots" content="all">
+    
+	<title>Template</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+<style type='text/css'>
+    
+    p {
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    #mask{ 
+        position:absolute; /* important */
+        top:0px; /* start from top */
+        left:0px; /* start from left */
+        height:100%; /* cover the whole page */
+        width:100%;  /* cover the whole page */
+        display:none; /* don't show it '*/          
+        
+        /* styling bellow */
+        background-color: black; 
+    }
+    
+    .modal_window{
+        position:absolute; /* important so we can position it on center later */
+        display:none; /* don't show it */
+        
+        /* styling bellow */
+        color:white;
+    }
+    
+    /* style a specific modal window  */
+    #modal_window{
+        padding:50px;
+        border:1px solid gray;
+        background: #246493;
+        color:black;
+    }
+</style>
+
+<script type='text/javascript' src='js/jquery-2.1.4.js'></script>                   
+<script type='text/javascript'>
+
+    $(document).ready(function(){
+    
+    //get the height and width of the page
+    var window_width = $(window).width();
+    var window_height = $(window).height();
+    
+    //vertical and horizontal centering of modal window(s)
+    /*we will use each function so if we have more then 1 
+    modal window we center them all*/
+    $('.modal_window').each(function(){
+        
+        //get the height and width of the modal
+        var modal_height = $(this).outerHeight();
+        var modal_width = $(this).outerWidth();
+        
+        //calculate top and left offset needed for centering
+        var top = (window_height-modal_height)/2;
+        var left = (window_width-modal_width)/2;
+        
+        //apply new top and left css values 
+        $(this).css({'top' : top , 'left' : left});
+        
+    });
+
+        
+        $('.activate_modal').click(function(){
+                
+              //get the id of the modal window stored in the name of the activating element       
+              var modal_id = $(this).attr('name');
+              
+              //use the function to show it
+              show_modal(modal_id);
+              
+        });
+        
+        $('.close_modal').click(function(){
+            
+            //use the function to close it
+            close_modal();
+            
+        });
+        
+    });
+    
+    //THE FUNCTIONS
+    
+    function close_modal(){
+        
+        //hide the mask
+        $('#mask').fadeOut(500);
+        
+        //hide modal window(s)
+        $('.modal_window').fadeOut(500);
+        
+    }
+    function show_modal(modal_id){
+    
+        //set display to block and opacity to 0 so we can use fadeTo
+        $('#mask').css({ 'display' : 'block', opacity : 0});
+        
+        //fade in the mask to opacity 0.8 
+        $('#mask').fadeTo(500,0.8);
+         
+         //show the modal window
+        $('#'+modal_id).fadeIn(500);
+        
+    }
+</script>
+
+</head>
+<body>
+    <center><h1>Modal Window Demo</h1></center>
+    <p><a class='activate_modal' name='modal_window' href='#'>First modal window.</a></p>
+    <p><a class='activate_modal' name='modal_window2' href='#'>Second modal window.</a></p>
+    <div id='mask' class='close_modal'></div>
+    <div id='modal_window' class='modal_window'>This is the first modal window</div>
+    <div id='modal_window2' class='modal_window'>Welcome to the second modal window</div>   
+    
+    <div class="texto1">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+<br>
+<div class="texto2">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+<br>
+<div class="texto3">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+    
+    <div class="texto1">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+<br>
+<div class="texto2">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+<br>
+<div class="texto3">
+    <p>
+        O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.
+    </p>
+</div>
+    
+    <p><a class='activate_modal' name='modal_window' href='#'>First modal window.</a></p>
+    
+</body>
+</html>

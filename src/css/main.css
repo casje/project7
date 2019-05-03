@@ -1,0 +1,391 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.cf:before, cf:after {
+	content: "";
+	display: table;
+}
+.cf:after { clear: both; }
+
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #949494;
+  background-color: #ffffff;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 480px;
+	min-width: 830px;
+	border: 0;
+	background-color: #fff;
+	padding: 0;
+    overflow: hidden;
+}
+
+.header-main {
+	position: relative;
+	height: 41px;
+	/*background-color: #037E70;*/
+	background-color: #5a8db6;
+	/*box-shadow: 0 0 10px #333;*/
+	z-index: 1001;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px 1px 0px 1px;
+	/*color: #fff;*/
+}
+
+.content-main {
+	margin-top: 0px;
+	min-height: 550px;
+	min-width: 700px;
+	border: 1px solid #fff;
+	border-top: 0;
+	/*background-color: rgb(233, 236, 243); /*#e9eff3;*/
+	background-color: #e9eff3;
+	
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: left;
+    z-index: 500;
+}
+
+.footer-main {
+	clear: both;
+	margin-top: 0px;
+	min-height: 30px;
+	border: 1px solid #fff;
+	border-top: 0px;
+	background-color: #333333;
+	background: #eee url(../images/bg.png) top left repeat;
+	color: #fff;
+	/*background-color: rgba(0, 0, 0, .15);
+	color: #666;
+	*/
+	font-size: 12px;
+	padding: 2px;
+	height: 40px;
+	line-height: 34px;
+}
+
+.footer-left {	
+	float: left;
+	margin-left: 10px;
+}
+
+.footer-right {	
+	float: right;
+	margin-right: 10px;
+}
+
+.ident-logo {
+	float: left;
+	height: 40px;
+	width: 230px;
+	margin: 0 5px 0 0;
+	padding: 5px 5px 2px 5px;
+	/*border-right: 1px solid #fff;*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 16px;
+	line-height: 34px;
+	color: #fff;
+}
+
+
+.menu-main {
+	position: relative;
+	display: none;
+	height: 32px;
+	width: 40px;
+	float: left;
+
+	margin: 5px 5px 0 0;
+	padding-top: 2px;
+	text-align: center;
+	font-size: 14px;
+	border: 0px;
+	z-index: 200;
+}
+
+
+.menu-main a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	height: 32px;
+	z-index: 200;
+}
+
+.menu-main a:hover {
+	color: #0ff;
+}
+
+.menu-main a:focus {
+	color: #2ba6cb;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #999;
+	border-bottom: 0;
+}
+
+.menu-main > li:hover > a,
+.menu-main > li:focus > a {
+	color: #2ba6cb!important;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #999;
+	border-bottom: 0;
+}
+
+.menu-conteiner {
+	font-size: 12px;
+	
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	margin-top: -1px;
+	display: none;
+	float: none;
+
+	width: 413px;
+	min-height: 100px;
+	z-index: -1;
+
+	background-color: #fff;
+	background-image: linear-gradient(to bottom, #ffffff, #eef4ff);
+	
+	border-radius: 4px;
+	border-top-left-radius: 0;
+	border: 1px solid #999;
+	box-shadow: 5px 5px rgba(102, 102, 102, 0.3)
+}
+/*
+.menu-main a:hover + .menu-conteiner,
+.menu-main a:focus + .menu-conteiner,
+.menu-conteiner:hover,
+.menu-conteiner:focus {
+    display: block;    
+}
+*/
+
+.dropmenu-conteiner {
+	color: #333;
+	
+	display: none;
+	right: 8px!important;
+
+	width: 340px;
+	min-height: 100px;
+	z-index: -1;
+
+	background-color: #fff;
+	background-image: linear-gradient(to bottom, #ffffff, #eef4ff)!important;
+
+	padding: 5px 8px!important;
+}
+
+/*
+.dropmenu a:focus + .dropmenu-conteiner,
+.dropmenu-conteiner:hover {
+    display: block;
+}
+*/
+
+/* FIM - CSS DO MENU PRINCIPAL */
+
+.dropmenu {
+	list-style: none; 
+	float: right;
+	color: #fff;
+}
+
+.dropmenu > li {
+	position: relative;
+	float: right;
+	min-width: 80px;
+		
+	margin: 0;
+	margin-top: 3px;
+	padding: 0px 1px 0px 1px;
+	border: 0px;
+	border-left: 1px solid #fff;
+	border-left-width: 1px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 34px;
+}
+
+.dropmenu li > a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 0px 3px 0px 3px;
+	height: 33px;	
+}
+
+.dropmenu > li:hover > a,
+.dropmenu > li:focus > a {
+	background-color: #fff;
+	color: #2ba6cb!important;
+}
+
+.dropmenu li > ul {
+	position: absolute;
+	top: 40px;
+	left: auto;
+	right: 0px;
+	z-index: 1000;
+	min-width: 100px;
+	
+	
+	border-radius: 4px;
+	border: 1px solid #999;
+	/*border: 1px solid rgba(0, 0, 0, .15);*/
+	background: #fff;
+	box-shadow: 5px 5px rgba(102, 102, 102, 0.3);
+	
+	padding: 0px;
+	display: none;
+	box-sizing: border-box;
+}
+
+.dropmenu li > ul::before {
+    position: absolute;
+    top: -8px;
+    left: auto;
+    right: 9px;
+    display: inline-block !important;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #999;
+    border-left: 8px solid transparent;
+    content: '';
+}
+
+.dropmenu li > ul::after {
+    position: absolute;
+    top: -7px;
+    left: auto;
+    right: 10px;
+    display: inline-block !important;
+    border-right: 7px solid transparent;
+    /*Cor da seta */
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid transparent;
+    content: '';
+}
+
+.dropmenu .esquerda{
+	right: 0;
+	left: auto;
+}
+
+.dropmenu li > ul > li {
+	float: none;
+	margin: 0;
+    padding: 0; /* padding do menu */
+    border: 0;
+	text-align: left;
+	line-height: normal;
+}
+
+.dropmenu li > ul > li:first-child {
+	margin-top: 5px;
+}
+
+.dropmenu li > ul > li > a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	margin: 0px;
+    padding: 2px 5px; 
+	/*border: 1px solid #fff;*/
+	
+	white-space: nowrap;	
+	height: 32px;
+	line-height: 28px;
+}
+
+.dropmenu li > ul > li > a:hover {
+	/*
+	background-color: #d1e8ff;
+	color: #06C;
+	border: 1px solid #66a7e8;
+	*/
+	color: #fff;
+	background-color: #2ba6cb;
+}
+
+.dropmenu li > ul > li:first-child > a:hover {
+	/*border-top-left-radius: 3px;
+	border-top-right-radius: 3px;*/
+}
+
+.dropmenu li > ul > li:last-child > a:hover {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.dropmenu .divider {
+	height: 1px;
+	padding: 0;
+    margin: 3px 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+/*
+.dropmenu a:focus + .submenu,
+.submenu:hover {
+    display: block;
+}
+*/
+
+.dropmenu .submenu .disabled > a,
+.dropmenu .submenu .disabled > a:hover,
+.dropmenu .submenu .disabled > a:focus{
+	color: #999;
+	pointer-events: none;
+	/*opacity: .7;*/
+	text-decoration: none;
+	cursor: not-allowed;
+	/*background-color: transparent;
+	border: 1px solid #fff;
+	background-image: none;*/
+}
+
+.fa-red {
+	color: #b40404;
+}
+
+/* FIM - CSS DO MENU PRINCIPAL */
+

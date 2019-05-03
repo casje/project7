@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudio Alves Jr">
+    <meta name="description" content="Modelo para uma aplicação comercial">
+    <meta name="robots" content="all">
+
+    <title>Project 7 - Template</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav-main.css">
+    <link rel="stylesheet" href="css/nav-menu.css">
+    <link rel="stylesheet" href="css/nav-menutop.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery-app-menu.js"></script>
+    <script type="text/javascript" src="js/jquery-app-main.js"></script>     
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="header-main">
+                <div class="ident-logo">Project 7 Dynamics CRM</div>
+                <ul class="menu-main">
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-2x"></i></a>
+                        <ul class="menu-conteiner">
+                            <li>
+                                <div class="div-conteiner div-conteiner-blue"><span>teste</span></div>
+                                <div class="div-conteiner div-conteiner-green"><span>teste</span></div>
+                                <div class="div-conteiner div-conteiner-orange"><span>teste</span></div>
+                            <li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="dropmenu">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-question-circle fa-fw"></i>&nbsp; Ajuda &nbsp;<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul id="ul-ajuda" class="dropmenu-conteiner">
+                            <li>
+                                <div class="div-menu-title1">
+                                    <h2>O que é o Project 7 Dynamics CRM</h2>
+                                    <div class="divider"></div>
+                                    <p>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                                    </p>
+                                    <div><a href="#" class="btnRegister"><i class="fa fa-check fa-fw"></i>&nbsp;Acessar página de ajuda</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user fa-fw"></i>&nbsp; Usuário &nbsp;<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul id="ul-usuario" class="submenu">
+                            <li><a href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp;Editar</a></li>
+                            <li><a href="#"><i class="fa fa-bar-chart fa-fw"></i>&nbsp;Dashboard</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-out fa-fw fa-red"></i>&nbsp;Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-gear fa-fw"></i>&nbsp; Configuração &nbsp;<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul id="ul-config" class="submenu">
+                            <li><a href="#"><i class="fa fa-edit fa-fw"></i>&nbsp;Personalização</a></li>
+                            <li><a href="#"><i class="fa fa-key fa-fw"></i>&nbsp;Acessos</a></li>
+                            <li class="disabled"><a href="www.uol.com.br"><i class="fa fa-refresh fa-fw"></i>&nbsp;Atualização</a></li>
+                            <li><a href="#"><i class="fa fa-server fa-fw"></i>&nbsp;Rede e Internet</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-wrench fa-fw"></i>&nbsp;Todas as opções</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope-o fa-fw"></i>&nbsp; Mensagem &nbsp;<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul id="ul-mensagem" class="nav-menutop">
+                            <li>
+                                <form class="nav-menutop-form">
+                                    <div class="nav-menutop-search">
+                                        <input type="text" placeholder="procure a mensagem..." name="inputsearchmsg"> 
+                                    </div> 
+                                </form>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="nav-menutop-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-1.png"></span>
+                                                <span class="nav-menutop-title">Pendência de documentos</span>
+                                                <span class="nav-menutop-text">Foram solicitados novos documentos para o seu processo de contratação do crédito imobiliário</span>
+                                                
+                                            </a>
+                                         </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-2.png"></span>
+                                                <span class="nav-menutop-title">Aguardando análise de crédito</span>
+                                                <span class="nav-menutop-text">A proposta 01010105 aguarda o processo de análise de crédito</span>
+                                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-3.png"></span>
+                                                <span class="nav-menutop-title">Contrato enviado para assinatura do contrato</span>
+                                                <span class="nav-menutop-text">Favor, providenciar a assintura do contrato, para não perder a data limite.</span>
+                                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-4.png"></span>
+                                                <span class="nav-menutop-title">Contrato aguardando registro</span>
+                                                <span class="nav-menutop-text">O contrato número 10101212510 encontra-se no cartório 124-B, na rua São Bento, 1290, Centro, de São Paulo</span>
+                                                
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-1.png"></span>
+                                                <span class="nav-menutop-title">Pendência de documentos</span>
+                                                <span class="nav-menutop-text">Foram solicitados novos documentos para o seu processo de contratação do crédito imobiliário</span>
+                                                
+                                            </a>
+                                         </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-2.png"></span>
+                                                <span class="nav-menutop-title">Aguardando análise de crédito</span>
+                                                <span class="nav-menutop-text">A proposta 01010105 aguarda o processo de análise de crédito</span>
+                                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-3.png"></span>
+                                                <span class="nav-menutop-title">Contrato enviado para assinatura do contrato</span>
+                                                <span class="nav-menutop-text">Favor, providenciar a assintura do contrato, para não perder a data limite.</span>
+                                                
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="nav-menutop-image"><img class="img-circle" src="images/thumb-4.png"></span>
+                                                <span class="nav-menutop-title">Contrato aguardando registro</span>
+                                                <span class="nav-menutop-text">O contrato número 10101212510 encontra-se no cartório 124-B, na rua São Bento, 1290, Centro, de São Paulo</span>
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="divider color-divider-red"></li>
+                            <li>
+                                <div class="todasmsg"><a href="#">todas as mensagens</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="maintag">
+            <div class="content-main">
+
+                <div class="navegacao">
+                    <nav>
+                        <div class="nav-menu-main">                            
+                            <h3>
+                                <i class="fa fa-tachometer fa-fw"></i>&nbsp;
+                                <span>Dashboard</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#" data-name="chave" data-valor="23" data-link="dashboard1">Dashboard - modelo completo</a></li>
+                                <li><a href="#" data-link="dashboard2">Dashboard - modelo simples</a></li>
+                            </ul>
+                            <h3>
+                                <i class="fa fa-bar-chart fa-fw"></i>&nbsp;
+                                <span>Gráficos</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#" data-link="2">Gráficos - tipo barras</a></li>
+                                <li><a href="#">Gráficos - tipo pizza</a></li>
+                                <li><a href="#">Gráficos - tipo linhas</a></li>
+                                <li><a href="#">Gráficos - tipo dispersão</a></li>
+                                <li><a href="#">Gráficos - outros</a></li>
+                            </ul>
+                            <h3>
+                                <i class="fa fa-table fa-fw"></i>&nbsp;
+                                <span>DataView</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">DataView - Grid 1</a></li>
+                                <li><a href="#">DataView - Grid 2</a></li>
+                                <li><a href="#">DataView - Grid 3</a></li>
+                                <li><a href="#">DataView - ListView</a></li>
+                                <li><a href="#">DataView - Treeview</a></li>
+                            </ul>
+                            <h3>
+                                <i class="fa fa-list-alt fa-fw"></i>&nbsp;
+                                <span>Forms</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">Panel</a></li>
+                                <li><a href="#">Wizard</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Data Validation</a></li>
+                                <li><a href="#">Input Masks</a></li>
+                                <li><a href="#">Dialog - modal</a></li>
+                                <li><a href="#">Prompt - modal </a></li>
+                                <li><a href="#">Page Error</a></li>
+                            </ul>
+                            <h3>
+                                <i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;
+                                <span>UI Elements</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">Elementos básicos</a></li>
+                                <li><a href="#">Accordion</a></li>
+                                <li><a href="#">Alert</a></li>
+                                <li><a href="#">Buttons</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Combobox</a></li>
+                                <li><a href="#">Collapse</a></li>
+                                <li><a href="#">Datepicker</a></li>
+                                <li><a href="#">Dropdown</a></li>
+                                <li><a href="#">Editor</a></li>
+                                <li><a href="#">File Upload</a></li>
+                                <li><a href="#">Pagination</a></li>
+                                <li><a href="#">Progressbar</a></li>
+                                <li><a href="#">Rating</a></li>
+                                <li><a href="#">Sliders</a></li>
+                                <li><a href="#">Tabs</a></li>
+                                <li><a href="#">Tiles</a></li>
+                                <li><a href="#">Timepicker</a></li>
+                                <li><a href="#">Tooltips e Popovers</a></li>   
+                                <li><a href="#">Treeview</a></li>
+                            </ul>                                                        
+                            <h3>
+                                <i class="fa fa-wrench fa-fw"></i>&nbsp;
+                                <span>Extras</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">Icons</a></li>
+                                <li><a href="#">Maps</a></li>
+                                <li><a href="#">Timeline</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Comments</a></li>
+                                <li><a href="#">Tocify</a></li>
+                                <li><a href="#">Notifications</a></li>
+                                <li><a href="#">ScrollBox</a></li>
+                                <li><a href="#"></a></li>
+
+                            </ul>
+                            <h3>
+                                <i class="fa fa-file-text-o fa-fw"></i>&nbsp;
+                                <span>Report</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">Relatório básico</a></li>
+                                <li><a href="#">Relatório com cabeçalho e rodapé</a></li>
+                                <li><a href="#">Relatório planilha</a></li>
+                                <li><a href="#">Relatório em formato PDF</a></li>
+                            </ul>                            
+                            <h3>
+                                <i class="fa fa-key fa-fw"></i>&nbsp;
+                                <span>Acessos</span>
+                            </h3>
+                            <ul>
+                                <li><a href="#">Acesso permitido</a></li>
+                                <li><a class="acper" href="#">Acesso aguardando aprovação</a></li>
+                                <li><a class="acnot" href="#">Acesso bloqueado, ou sem acesso</a></li>
+                            </ul>
+
+                        </div>
+
+                    </nav>
+                </div>
+
+                <div id="content-page" name="content-page" class="content-page">
+                    
+                    
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-main cf">
+                <div class="footer-left">Project 7 Dynamics CRM - Todos os direitos reservados</div>
+                <div class="footer-right">Project 7 &copy; 2015</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
